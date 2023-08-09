@@ -19,12 +19,8 @@ body{
     "rod rod rod";
     grid-gap: 3px;
     grid-template-columns: 20% auto auto;
-    grid-template-rows: auto 2100px auto;
-    margin: 0 auto;
-    justify-content: center;
+    grid-template-rows: auto auto auto;
     box-sizing: border-box;
-    min-height: 100vh;
-    width: 1380px;
     padding: 5px 5px 5px 5px;
 }
 
@@ -44,14 +40,10 @@ header, aside, main, footer{
 }
 
 .cards{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    max-width: 710px;
-    margin: 20px auto;
-    gap: 20px;
-    padding: 15px;
-    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-    font-size: 1rem;
+
 }
 
 .card{
