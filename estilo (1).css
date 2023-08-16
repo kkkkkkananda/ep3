@@ -18,14 +18,15 @@ body{
     "sec pri pri"
     "rod rod rod";
     grid-gap: 3px;
-    grid-template-columns: 20% auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 100% auto auto;
+    grid-template-rows: 20 auto auto;
     box-sizing: border-box;
     padding: 5px 5px 5px 5px;
 }
 
 aside{
     grid-area: sec;
+   grid-template-columns: left;
 
 }
 
