@@ -194,3 +194,8 @@ p, li {
 .anuncio{
     align-items: center;
 }
+.icon{
+    max-width:12rem;
+    max-height: 12rem;
+    border-radius: 100%;
+} 

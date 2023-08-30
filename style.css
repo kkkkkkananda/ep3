@@ -191,3 +191,18 @@ section.images .circle {
         font-size: 1rem;
     }
 }
+.google{
+    max-width:4rem;
+    max-height:4rem;
+    border-radius: 100%;
+} 
+.facebook{
+    max-width:4rem;
+    max-height:4rem;
+    border-radius: 100%;
+} 
+.linkedin{
+    max-width:5rem;
+    max-height: 5rem;
+    border-radius: 100%;
+} 
