@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: hsl(276, 56%, 78%);
+    color: white;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.h1{
+    font-family:Georgia, Times, serif;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(119, 89, 128);
+    color: rgb(253, 253, 253);
+    font-size: 50px;
+    padding: 15px;
+}
+.h1:hover{
+    color: rgb(255, 255, 255);;
+    text-shadow: rgb(64, 50, 68); 
+    border-color: rgb(254, 251, 255);
+    border-style: double;
+    border-width: 0 0 4px 0;
+    font-size: 52px;
+    transition: 1s;
+}
+main {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titulo{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(119, 89, 128);
+    color: rgb(253, 253, 253);
+    font-size: 50px;
+    padding: 15px;
+}
+.titulo:hover{
+    color: rgb(255, 255, 255);;
+    text-shadow: rgb(64, 50, 68); 
+    border-color: rgb(254, 251, 255);
+    border-style: double;
+    border-width: 0 0 4px 0;
+    font-size: 52px;
+    transition: 1s;
+}
+
+main h1 {
+    color: #bb80fe;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+main.social-media {
+    display: flex;
+    align-content: center;
+}
+
+main .social-media a {
+    text-decoration: none;
+}
+
+main .social-media img {
+    width: 36px;
+    margin-left: 3rem;
+}
+
+main .social-media a:first-child img {
+    margin-left: 0;
+}
+
+main .alternative {
+    margin-top: 1rem;
+}
+
+main .alternative span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #641683ee;
+    position: relative;
+}
+
+main .alternative span::before, main .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    right: 50px;
+    background: #641683ee;
+}
+
+main .alternative span::after {
+    left: 50px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+main form input {
+    background:hsl(278, 100%, 84%);
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    border: 1px solid #100418;
+    border-radius: 8px;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    margin-top: 4rem;
+    border: none;
+    border-radius: 32px;
+    background: #9f63ff;
+    color: white;
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+    background: #8f52d4;
+}
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    section.mobile img {
+        width: 110%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    section.mobile {
+        display: none;
+        visibility: hidden;
+    }
+
+    main {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main .alternative span {
+        font-size: 0.8rem;
+    }
+
+    main form label span, main form input[type="submit"] {
+        font-size: 1rem;
+    }
+}
+.mobile{
+    display: flex;
+    position:fixed;
+    right:20%;
+    bottom: 25%;
+    max-width:25rem;
+    max-height: 25rem;
+    border-radius: 100%;
+}
+.google{
+    max-width:4rem;
+    max-height:4rem;
+    border-radius: 100%;
+} 
+.facebook{
+    max-width:4rem;
+    max-height:4rem;
+    border-radius: 100%;
+} 
+.tiktok{
+    max-width:4rem;
+    max-height: 4rem;
+    border-radius: 100%;
+} 

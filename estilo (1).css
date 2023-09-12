@@ -1,0 +1,241 @@
+header{
+    grid-area: cab;
+    display: flex;
+}
+
+.logo{
+    max-width:12rem;
+    max-height: 12rem;
+    border-radius: 100%;
+}
+
+body{
+    background-color:hsl(283, 61%, 76%);
+    border: 2px solid rgb(255, 255, 255);
+    display: grid;
+    grid-template-areas: 
+    "cab cab cab"
+    "sec pri pri"
+    "rod rod rod";
+    grid-gap: 3px;
+    grid-template-columns: 100% auto auto;
+    grid-template-rows: 20 auto auto;
+    box-sizing: border-box;
+    padding: 5px 5px 5px 5px;
+}
+
+aside{
+    grid-area: sec;
+   grid-template-columns: left;
+
+}
+
+main{
+    grid-area: pri;
+}
+
+header, aside, main, footer{
+    background-color: rgb(228, 208, 245);
+    padding: 2rem;
+    border: none;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    font-family:serif;
+
+}
+
+.card{
+    display: flex;
+    background-color:hsl(278, 100%, 84%);
+    color: rgb(226, 183, 255);
+    border: 1px rgb(171, 125, 214);
+    width: 300px;
+    border-radius: 40px;
+    padding: 10px;
+    width: 300px;
+    margin: 20px;
+    transition: 0.7s;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.card:hover{
+    background-color:hsl(271, 100%, 84%);
+    color: rgb(255, 252, 252);
+}
+.card:hover a{
+    background-color: hsl(270, 83%, 67%);
+    color: rgb(255, 251, 251);
+}
+
+.produtos{
+    display: block;
+    height: auto;
+    width: 230px;
+    border-radius: 30px;
+    margin: 0px auto;
+}
+.nome{
+    line-height: 0.5px;
+    font-size: 1.3rem;
+    padding: 5px;
+    font-family: Georgia, serif;
+    color: rgb(255, 255, 255)
+}
+.elemento{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    display: inline;
+    align-items: center;
+    margin: 5rem;
+}
+
+.lista .link{ 
+    color:rgb(186, 133, 230);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    padding: 10px 1px;
+    line-height: 100px;
+}
+
+.lista a:hover{
+    color:rgb(70, 15, 107);
+    border-color: hsl(286, 51%, 79%);
+    border-style:double;
+    border-width: 0 0 4px 0;
+    transition: 0.2s;
+}
+
+.texto{
+    line-height: 5px;
+    font-size: 1.3rem;
+    padding: 1px;
+    color: rgb(147, 71, 197);
+}
+
+.texto > p:first-of-type{
+    margin-top: 1px;
+}
+
+.comprar{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(196, 110, 235);
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+.comprar:hover{
+    background-color: rgb(152, 81, 209);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer{
+    grid-area: rod;
+}
+
+p, li {
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 0,3px;
+}
+
+.i-header{
+    max-width: 5rem;
+    max-height: 5rem;
+    border-radius: 100%;
+}
+
+.titulo{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(119, 89, 128);
+    color: rgb(253, 253, 253);
+    font-size: 50px;
+    padding: 15px;
+}
+.titulo:hover{
+    color: rgb(255, 255, 255);;
+    text-shadow: rgb(64, 50, 68); 
+    border-color: rgb(254, 251, 255);
+    border-style: double;
+    border-width: 0 0 4px 0;
+    font-size: 52px;
+    transition: 1s;
+}
+
+.apresentacao{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color:rgb(116, 89, 128);
+    font-size: 30px;
+    
+}
+
+
+.rodapé{
+    font-size: 1.2rem;
+    font-family: serif;
+    color: rgb(110, 89, 128);
+    text-align: right;
+}
+
+.anuncio{
+    align-items: center;
+}
+.icon{
+    max-width:12rem;
+    max-height: 12rem;
+    border-radius: 100%;
+} 
+.product-page{
+    background-color: rgb(255, 245, 203);
+    
+}
+.product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.product-image{
+    width: 50%;
+}
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+.product-info{
+    width: 50%;
+}
+.product-info h2{
+    color: rgb(119, 52, 182);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.description{
+    color: #974cfa;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin-bottom: 1rem;
+}
+.price{
+    color: rgb(119, 52, 182);
+}
+.button-cart{
+    color:rgb(79, 26, 128)
+}
