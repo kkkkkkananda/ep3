@@ -2,7 +2,6 @@ header{
     grid-area: cab;
     display: flex;
 }
-
 .logo{
     max-width:12rem;
     max-height: 12rem;
@@ -25,10 +24,9 @@ body{
 }
 
 aside{
-    grid-area: sec;
+   grid-area: sec;
    grid-template-columns: left;
-
-}
+   }
 
 main{
     grid-area: pri;
@@ -89,7 +87,6 @@ header, aside, main, footer{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
     font-weight: 700;
-    text-transform: uppercase;
     padding: 5px 5px;
     display: inline;
     align-items: center;
@@ -106,12 +103,13 @@ header, aside, main, footer{
 }
 
 .lista a:hover{
-    color:rgb(70, 15, 107);
+    color:rgb(185, 100, 255);
     border-color: hsl(286, 51%, 79%);
-    border-style:double;
+    transition-property: all;
     border-width: 0 0 4px 0;
-    transition: 0.2s;
-}
+    font-size: 30px;
+    transition: 1s;
+  }
 
 .texto{
     line-height: 5px;
@@ -169,7 +167,6 @@ p, li {
     color: rgb(255, 255, 255);;
     text-shadow: rgb(64, 50, 68); 
     border-color: rgb(254, 251, 255);
-    border-style: double;
     border-width: 0 0 4px 0;
     font-size: 52px;
     transition: 1s;
@@ -200,15 +197,17 @@ p, li {
     border-radius: 100%;
 } 
 .product-page{
-    background-color: rgb(255, 245, 203);
+    background-color: rgb(223, 196, 253);
     
 }
 .product{
+    background-color: rgb(226, 183, 255);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    border-radius: 40px;
 }
 .product-image{
     width: 50%;
@@ -226,16 +225,44 @@ p, li {
     font-weight: bold;
     margin-bottom: 1rem;
 }
+.button-cart{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(196, 110, 235);
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 100px;
+    transition: 0.5s;
+    border: none;
+}
+.button-cart:hover{
+    background-color: rgb(152, 81, 209);
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
 .description{
-    color: #974cfa;
+    color: #ae4cff;
     font-size: 17px;
     font-weight: 600;
     line-height: 1.2em;
     margin-bottom: 1rem;
 }
 .price{
-    color: rgb(119, 52, 182);
+    color:rgb(79, 26, 128);
+    font-size: 30px;
 }
 .button-cart{
     color:rgb(79, 26, 128)
+}
+.titulo2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 2px 2px 2px  rgb(253, 253, 253);
+    color: rgb(166, 58, 255);
+    font-size: 50px;
+    padding: 15px;
 }

@@ -24,9 +24,34 @@ body > header {
 
 body > main {
   background: #d8a9ff;
-  padding: 0 30px 30px;
+  padding: 0 10px 10px;
+}
+.elemento{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 5px 5px;
+  display: inline;
+  align-items: center;
+  margin: 5rem;
 }
 
+.lista .link{ 
+  color:rgb(186, 133, 230);
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  padding: 10px 1px;
+  line-height: 35px;
+}
+.lista a:hover{
+  color:rgb(186, 133, 230);
+  border-color: hsl(286, 51%, 79%);
+  transition-property: all;
+  border-width: 0 0 4px 0;
+  font-size: 30px;
+  transition: 1s;
+}
 .titulo{
   font-family:Georgia, 'Times New Roman', Times, serif;
   text-align: center;
@@ -39,7 +64,6 @@ body > main {
   color: rgb(255, 255, 255);;
   text-shadow: rgb(64, 50, 68); 
   border-color: rgb(254, 251, 255);
-  border-style: double;
   border-width: 0 0 4px 0;
   font-size: 52px;
   transition: 1s;
